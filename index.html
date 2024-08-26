@@ -1,11 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-3</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+     
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- daisy UI and tailwind Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+   <!-- style -->
+    <style>
+    .font-manrope{
+      font-family: "Manrope", sans-serif;
+    }
+    </style>
+
+
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'house-icon': '#ABEF5F',
+          'house-font': '#737373',
+          'house-button': '#ABEF5F80',
+        }
+      }
+    }
+  }
+</script>
+
+
 </head>
-<body>
-    <h1>Hi</h1>
+<body class="font-manrope">
+    <!-- header part starts from here -->
+
+    <header class="min-h-screen bg-gradient-to-b from-gray-100 to-white">
+      <div class=" container mx-auto md:w-[90%]" >
+        <div class="navbar ">
+            <div class="navbar-start">
+              <h6 class="btn btn-ghost text-4xl font-bold hover:bg-gray-100 "> <div class="rounded-full bg-house-icon w-8 h-8 "><i class="fa-solid fa-arrow-right text-2xl -rotate-45 flex text-center justify-center "></i></div> Rinterio</h6>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="text-base font-extrabold text-rgb(73, 73, 73)"><a>Home</a></li>
+                <li class="text-base font-normal text-house-font "><a>Services</a></li>
+                <li class="text-base font-normal text-house-font "><a>Portfolio</a></li>
+                <li class="text-base font-normal text-house-font "><a>Blogs</a></li>
+                <li class="text-base font-normal text-house-font "><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+              <h6><i class="fa-solid fa-magnifying-glass mr-4 p-3 rounded-full bg-white border-2 text-house-font "></i></h6>
+              <h6><i class="fa-solid fa-cart-shopping    mr-4 p-3 rounded-full bg-white border-2 text-house-font "></i></h6>
+              <a class="btn bg-house-icon  hover:bg-house-icon text-xl font-extrabold rounded-3xl">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 text-white bg-black rounded-full w-7 h-7 text-xl"></i></a>
+            </div>
+            <div class="navbar-end lg:hidden ">
+              <i class="fa-solid fa-bars ml-4 rounded-full bg-white border-2 text-house-font h-8 w-8 text-xl flex justify-center text-center"></i>
+            </div>
+         </div>
+
+         <!-- hero part  -->
+
+         <div class="hero  min-h-screen">
+          <div class="hero-content flex-col ">
+            <img
+              src="./assets/banner.png"
+               />
+            <div class="text-center space-y-3">
+              <h1 class="text-3xl font-bold lg:text-6xl ">A barn house of this design has a striking appearance</h1>
+              <p class="py-6 text-sm font-normal lg:text-base">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+              </p>
+              <a class="btn btn-wide w-full  bg-house-button  hover:bg-house-button text-xl font-extrabold rounded-3xl lg:w-auto ">View Details<i class="fa-solid fa-arrow-right -rotate-45 text-black bg-house-icon rounded-full w-7 h-7 text-xl"></i></a>
+            </div>
+          </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+
+    </main>
+
+    <!-- footer section -->
+    <footer>
+
+    </footer>
 </body>
 </html>
