@@ -50,13 +50,13 @@
     <!-- header part starts from here -->
 
     <header class="min-h-screen bg-gradient-to-b from-gray-100 to-white">
-      <div class=" container mx-auto md:w-[90%]" >
-        <div class="navbar ">
-            <div class="navbar-start">
+      <div class=" container mx-auto w-[90%]" >
+        <div class="flex justify-between py-5">
+            <div class="">
               <h6 class="btn btn-ghost text-4xl font-bold hover:bg-gray-100 "> <div class="rounded-full bg-house-icon w-8 h-8 "><i class="fa-solid fa-arrow-right text-2xl -rotate-45 flex text-center justify-center "></i></div> Rinterio</h6>
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
+            <div class=" hidden lg:flex lg:w-[40%] ">
+              <ul class=" flex justify-between w-full  items-center">
                 <li class="text-base font-extrabold text-rgb(73, 73, 73)"><a>Home</a></li>
                 <li class="text-base font-normal text-house-font "><a>Services</a></li>
                 <li class="text-base font-normal text-house-font "><a>Portfolio</a></li>
@@ -64,12 +64,12 @@
                 <li class="text-base font-normal text-house-font "><a>Contact Us</a></li>
               </ul>
             </div>
-            <div class="navbar-end hidden lg:flex">
-              <h6><i class="fa-solid fa-magnifying-glass mr-4 p-3 rounded-full bg-white border-2 text-house-font "></i></h6>
-              <h6><i class="fa-solid fa-cart-shopping    mr-4 p-3 rounded-full bg-white border-2 text-house-font "></i></h6>
-              <a class="btn bg-house-icon  hover:bg-house-icon text-xl font-extrabold rounded-3xl">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 text-white bg-black rounded-full w-7 h-7 text-xl"></i></a>
+            <div class=" hidden lg:flex">
+              <h6><i class="fa-solid fa-magnifying-glass mr-3 p-3 rounded-full bg-white border-2 text-house-font "></i></h6>
+              <h6><i class="fa-solid fa-cart-shopping    mr-3 p-3 rounded-full bg-white border-2 text-house-font "></i></h6>
+              <a class="btn bg-house-icon  hover:bg-house-icon text-xl font-extrabold rounded-3xl ">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 text-white bg-black rounded-full w-7 h-7 text-xl"></i></a>
             </div>
-            <div class="navbar-end lg:hidden ">
+            <div class=" flex items-center lg:hidden ">
               <i class="fa-solid fa-bars ml-4 rounded-full bg-white border-2 text-house-font h-8 w-8 text-xl flex justify-center text-center"></i>
             </div>
          </div>
@@ -94,21 +94,24 @@
     </header>
 
     <!-- main section -->
-    <main class="bg-gray-100 mt-6 lg:mt-28">
+    <main class="bg-gray-100 mt-6 lg:mt-28 ">
 
       <!-- about us -->
-       
-      <div class="container mx-auto md:w-[90%]">
-
+<div class=" hidden lg:flex pt-6 ml-6 pb-3">
+  <img src="./assets/Vector.png" alt="">
+</div>
+      <div class="container mx-auto w-[90%] ">
+        
         <div class="card lg:card-side lg:justify-between">
          
-          <div class="lg:max-w-[45%]"> 
-            <a class="btn  bg-white  hover:bg-white text-xl font-bold rounded-3xl lg:w-auto "><i class="fa-solid fa-arrow-right  text-black rounded-full w-7 h-7 text-xl"></i>About Us</a>
+          <div class="lg:max-w-[45%] mt-6"> 
+            <div class="text-center lg:text-left">
+            <a class="btn  bg-white   hover:bg-white text-xl font-bold rounded-3xl lg:w-auto "><i class="fa-solid fa-arrow-right  text-black rounded-full w-7 h-7 text-xl"></i>About Us</a>
            
             <h2 class="text-4xl font-bold mt-6">We design thoughtful, liveable spaces</h2>
             <p class="text-base font-normal mt-6">The barn house captivates with its blend of rustic charm and 
               modern sophistication, featuring weathered wood, sleek metal accents.</p>
-
+            </div>
               <div class="mt-6 flex rounded-2xl bg-white p-6">
                 <img src="./assets/commercial.png" class="w-10 h-10 lg:w-16 lg:h-16" alt="">
                 <div class="pl-4 ">
@@ -124,9 +127,9 @@
               </div>
               </div>
          </div>  
-          <figure class="mt-6 lg:mt-0">
+          <figure class="mt-6 lg:mt-0 ml-4">
             <img
-              src="./assets/Rectangle.png"
+              src="./assets/Rectangle.png" class="w-full h-full rounded-2xl object-cover"
               alt="Album" class="object-cover" />
           </figure>
         </div>
@@ -136,7 +139,7 @@
 
       <!-- how we works part -->
 
-      <div class="container mx-auto mt-6 md:w-[90%] lg:mt-24">
+      <div class="container mx-auto mt-6 w-[90%] lg:mt-24">
         <div  class="text-center">
         <a class="btn  bg-white  hover:bg-white text-xl font-bold rounded-3xl lg:w-auto "><i class="fa-solid fa-arrow-right  text-black rounded-full w-7 h-7 text-xl"></i>How we works</a>
 
@@ -210,7 +213,7 @@
       <!-- explore our work part -->
 
 
-       <div class="container mx-auto mt-6 md:w-[90%] md:mt-24">
+       <div class="container mx-auto mt-6 w-[90%] md:mt-24">
       
         <div class="text-center">
           <a class=" bg-bg-button  pt-2 pr-4 pb-2 pl-4 text-base font-bold rounded-3xl lg:w-auto "><i class="fa-solid fa-arrow-right  text-black rounded-full w-7 h-7 text-base"></i>Let’s Connect</a>
@@ -240,22 +243,22 @@
           <!-- 3 -->
 
           <div class="card border-2 grid col-span-6 lg:col-span-3 bg-white" >
-            <figure class="p-6">
+            
               <img
-                src="./assets/img2.png" 
+                src="./assets/img2.png" class=" p-6 w-full h-full "
                 alt="Album" />
-            </figure>
+           
           </div>
            
 
           <!-- 4 -->
 
           <div class="card border-2 bg-white  hidden lg:grid lg:col-span-2" >
-            <figure class="p-6">
+           
               <img
-                src="./assets/img3.png" 
+                src="./assets/img3.png" class=" p-6 w-full h-full "
                 alt="Album" />
-            </figure>
+          
           </div>
 
 
@@ -263,11 +266,11 @@
           <!-- 4 hidden -->
 
           <div class="card border-2 bg-white  lg:hidden grid col-span-6" >
-            <figure class="p-6">
+           
               <img
-                src="./assets/img5.png" 
+                src="./assets/img5.png" class=" p-6 w-full h-full "
                 alt="Album" />
-            </figure>
+            
           </div>
 
           <!-- 5 6 -->
@@ -276,12 +279,12 @@
             <div class="card lg:card-side border-2 bg-white">
               <figure class="p-6">
                 <img
-                  src="./assets/img4.png"
+                  src="./assets/img4.png" 
                   alt="Album" />
               </figure>
               <div class="card-body p-6 lg:w-8/12 lg:pl-0">
                 <h2 class="card-title font-bold">Commercial</h2>
-                <p class="text-base font-normal">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                <p class="text-base font-normal">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend and modern .</p>
                 <div class="card-actions ">
                   <a class="btn border-none text-xl bg-white hover:bg-white font-extrabold rounded-3xl ">View Details<i class="fa-solid fa-arrow-right -rotate-45 text-black bg-house-icon rounded-full w-7 h-7 text-xl"></i></a>
                 </div>
@@ -295,32 +298,31 @@
           <!-- 7 hidden -->
          
           <div class="card border-2 bg-white  lg:hidden grid col-span-6" >
-            <figure class="p-6">
+            
               <img
-                src="./assets/img3.png" 
+                src="./assets/img3.png" class=" p-6 w-full h-full "
                 alt="Album" />
-            </figure>
+           
           </div>
 
 
           <!-- 7 -->
 
-          <div class="card border-2 bg-white grid col-span-6 lg:col-span-2" >
-            <figure class="p-6">
+          <div class="card border-2 bg-white grid col-span-6 lg:col-span-2 " >
               <img
-                src="./assets/img5.png" 
+                src="./assets/img5.png" class=" p-6 w-full h-full "
                 alt="Album" />
-            </figure>
+          
           </div>
         </div>
        </div>
         
       <!-- challanges part -->
 
-     <div class="container mx-auto mt-6 md:w-[90%] md:mt-24">
+     <div class="container mx-auto mt-6 w-[90%] md:mt-24">
       <div class="text-center">
         <a class=" bg-bg-button  pt-2 pr-4 pb-2 pl-4 text-base font-bold rounded-3xl lg:w-auto "><i class="fa-solid fa-arrow-right  text-black rounded-full w-7 h-7 text-base"></i>Let’s Connect</a>
-        <h2 class="mt-6 text-4xl font-bold">Meet Our Members</h2>
+        <h2 class="mt-6 text-4xl font-bold">Meet Our Team Members</h2>
         <p class="mt-6 font-normal text-base">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
        </div>
         
@@ -441,7 +443,7 @@
       <!-- lets discuss part -->
       
       <div class=" bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover ">
-       <div class="container mx-auto md:w-[80%] pt-24 pb-20 ">
+       <div class="container mx-auto w-[80%] pt-24 pb-20 ">
        <div class="text-center">
         <a class=" bg-bg-button  pt-2 pr-4 pb-2 pl-4 text-base font-bold rounded-3xl lg:w-auto "><i class="fa-solid fa-arrow-right  text-black rounded-full w-7 h-7 text-base"></i>Let’s Connect</a>
         <h2 class="mt-6 text-4xl font-bold">Let’s Discuss Next Project</h2>
@@ -479,7 +481,7 @@
 
     <!-- footer section -->
     <footer class="bg-black pb-24">
-    <div class="container mx-auto md:w-[70%]  text-center">
+    <div class="container mx-auto w-[80%] md:w-[70%]  text-center">
 
 
       <h6 class="btn btn-ghost text-4xl font-bold hover:bg-black text-white mt-24 "> <div class="rounded-full bg-house-icon w-8 h-8 "><i class="fa-solid fa-arrow-right text-2xl -rotate-45 flex text-center justify-center text-black "></i></div> Rinterio</h6>
